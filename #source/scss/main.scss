@@ -1,0 +1,409 @@
+
+/* intro start */
+
+.intro {
+    //    background-image: url(https://media3.giphy.com/media/YXwmthHTL0EgM/giphy.gif);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+        color: #fff;
+        padding-bottom: 250px;
+        padding-top: 48px;
+        position: relative;
+        background: rgba(0, 17, 105, 0.7);
+    }
+
+    .course {
+        text-align: right;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        margin-bottom: 150px;
+    }
+
+    &__title {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 107.9%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    .click__arrow {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        padding: 11px 15px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0px 5px 34px rgba(241, 137, 160, 0.38));
+        border-radius: 9px;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .2s linear;
+
+        &:hover {
+            background: #FF1515;
+            border: 1px solid rgba(#FF1515, 0.5);
+        }
+    }
+
+    .next {
+        left: 55px;
+
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/* intro end */
+
+
+/* rate start */
+
+.rate {
+
+    &__inner {
+        border-bottom: 0.6px solid #DBDBDB;
+        padding: 48px 0;
+    }
+
+    &__subtitle {
+        margin: 21px 0 18px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 862px;
+    }
+}
+
+/* rate end */
+
+/* services start */
+
+.services {
+    padding: 62px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 740px;
+        margin-right: 20px;
+    }
+
+    &__subtitle {
+        font-family: 'Exo 2', sans-serif;
+        color: #FF1515;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 18px 0 27px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 130%;
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 22px 8px;
+        position: relative;
+        top: -15px;
+        left: -15px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            top: 15px;
+            left: 15px;
+            border-radius: 22px 8px;
+            z-index: -1;
+        }
+
+        &-content {
+            padding: 80px 94px 50px 50px;
+            background: rgba(0, 17, 105, 0.8);
+            color: #fff;
+            text-align: center;
+            border-radius: 22px 8px;
+        }
+
+
+        &-text {
+            max-width: 295px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 130%;
+            margin-top: 40px;
+        }
+
+        &-link {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+            margin-top: 27px;
+            display: inline-block;
+        }
+    }
+}
+
+/* services end */
+
+/* advantages start */
+
+.advantages {
+    padding-top: 68px;
+    background-color: #F5F8FB99;
+
+    &__inner {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 70px;
+        grid-column-gap: 75px;
+
+        padding-bottom: 80px;
+        border-bottom: 0.6px solid #DBDBDB;
+    }
+
+
+    &__title {
+        margin-bottom: 55px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            display: inline-block;
+            padding: 25px;
+            background-color: #FF1515;
+            box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.12);
+            border-radius: 7px;
+            margin-right: 27px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 109%;
+            margin-bottom: 13px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 121%;
+        }
+
+    }
+}
+
+/* advantages end */
+
+/* scheme start */
+
+.scheme {
+    padding: 60px 0 130px;
+    background-color: #F5F8FB99;
+
+    &__text {
+        margin-top: 23px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 121%;
+    }
+
+    &__inner {
+        display: grid;
+        width: 90%;
+        margin: 100px auto 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 160px;
+        position: relative;
+        background-image: url(../images/bg/scheme-line.png);
+        background-size: auto;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 230px;
+        background-image: url(../images/bg/scheme-ellipse.png);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -100px;
+            top: 0;
+            background-image: url(../images/icons/scheme-arrow.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+        }
+
+
+
+        &-right {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/icons/scheme-arrow.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                top: -80px;
+                right: 55px;
+                transform: rotate(50deg);
+            }
+
+            &::after {
+                top: 160px;
+                right: 55px;
+                transform: rotate(140deg);
+            }
+
+        }
+
+        &-top {
+            position: relative;
+            top: 3px;
+
+            &.scheme__item-arc::after {
+                display: none;
+            }
+
+            &::after {
+                top: 38px;
+            }
+        }
+
+        &-bottom {
+            position: relative;
+            bottom: -19px;
+
+            &.scheme__item-arc::after {
+                display: none;
+            }
+
+            &::after {
+                top: 30px;
+                transform: rotate(180deg);
+            }
+        }
+
+    }
+
+}
+
+/* scheme end */
+
+/* application start */
+
+.application {
+    background-image: url(https://media2.giphy.com/media/YXwmthHTL0EgM/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    &__inner {
+        padding: 110px 0 72px;
+        background-color: rgba(0, 17, 105, 0.7);
+        position: relative;
+    }
+
+    &__form {
+        margin-left: auto;
+        max-width: 580px;
+
+        &-title {
+            color: #fff;
+            margin-bottom: 38px;
+        }
+
+        &-input {
+            display: block;
+            width: 100%;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            background-color: transparent;
+            padding: 20px 24px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 107.9%;
+            color: #fff;
+            font-family: 'Exo', sans-serif;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 107.9%;
+                color: #fff;
+                font-family: 'Exo', sans-serif;
+            }
+
+            & + & {
+                margin-top: 15px;
+            }
+
+        }
+
+        &-btn {
+            font-family: 'Rubik', sans-serif;
+            padding: 15px 33px;
+            margin-top: 38px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+
+/* application end */

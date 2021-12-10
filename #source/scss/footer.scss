@@ -1,0 +1,88 @@
+
+.footer {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        border-bottom: 0.6px solid rgba(#828282, 0.2);
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &-item {
+            & + & {
+                margin-left: 30px;
+            }
+        }
+
+        &-link {
+            font-size: 15px;
+            line-height: 20px;
+            color: #103F7C;
+            text-transform: uppercase;
+            transition: color .1s linear;
+
+            &:hover {
+                color: #FF1515;
+            }
+        }
+    }
+
+    &__btn {
+        color: #fff;
+        text-transform: uppercase;
+        padding: 14px 20px;
+        background-color: #FF1515;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.12);
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__social {
+        &-whatsapp {
+            margin-right: 20px;
+        }
+    }
+
+    &__contact {
+        color: #103F7C;
+
+        &-phone {
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 28px;
+            margin-bottom: 2px;
+
+
+            svg {
+                margin-right: 15px;
+            }
+        }
+
+        &-email {
+            font-size: 16px;
+            line-height: 19px;
+            font-family: 'Rubik', sans-serif;
+
+            svg {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        line-height: 121%;
+        color: #103F7C;
+        padding: 40px 0;
+    }
+}

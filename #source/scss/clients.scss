@@ -1,0 +1,144 @@
+.clients {
+    padding: 50px;
+}
+
+.invoice {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {}
+
+    &__text {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    &__img {
+        width: 1000px;
+        height: auto;
+    }
+
+    &__download {
+        margin-top: 20px;
+    }
+}
+
+.wagons {
+    margin-top: 50px;
+
+    &__accordion {
+        color: #000000;
+        width: 100%;
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 70px 14px 0;
+            border-bottom: 1px solid rgba(#49455C, 0.43);
+            cursor: pointer;
+            user-select: none;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 40px;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 20px;
+                height: 20px;
+                transition: all .2s linear;
+            }
+
+            &.active {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+
+        &-text {
+            p {
+                font-size: 18px;
+                line-height: 25px;
+                color: #000;
+
+            }
+
+            display: none;
+            border-bottom: 1px solid rgba(#49455C, 0.43);
+            padding: 15px 0 15px 20px;
+            position: relative;
+        }
+    }
+}
+
+
+.railways {
+    margin-top: 80px;
+    &__text {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+
+    &__list {
+        padding-left: 20px;
+    }
+
+    &__item {
+
+        &-box {
+            display: flex;
+            align-items: center;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 20px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        &-link {
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

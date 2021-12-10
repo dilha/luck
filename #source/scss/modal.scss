@@ -1,0 +1,510 @@
+
+
+.modal {
+    background-color: rgba(#000, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow-y: auto;
+
+    &.show {
+        display: flex;
+    }
+
+    &__decor {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+        }
+
+        &-company::before {
+            background-image: url(../images/icons/modal-company.svg);
+        }
+
+        &-name::before {
+            background-image: url(../images/icons/modal-name.svg);
+        }
+
+
+        &-cargo::before {
+            background-image: url(../images/icons/modal-cargo.svg);
+        }
+
+        &-weight::before {
+            background-image: url(../images/icons/modal-weight.svg);
+            width: 21px;
+        }
+
+        &-station::before {
+            background-image: url(../images/icons/modal-station.svg);
+            width: 14px;
+            height: 18px;
+        }
+
+        &-email::before {
+            background-image: url(../images/icons/modal-email.svg);
+            width: 17px;
+            height: 12px;
+        }
+
+        &-stock::before {
+            background-image: url(../images/icons/modal-stock.svg);
+        }
+    }
+
+
+    &__content {
+        position: relative;
+        background: linear-gradient(326.77deg, #E7EFF3 7.77%, #FFFFFF 76.17%);
+        opacity: 0.9;
+        border-radius: 22px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: none;
+        z-index: 10;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 107.9%;
+        margin: 17px 0 26px;
+    }
+
+    input:not(.modal__btn, .modal__application-check),
+        {
+        font-family: 'Exo', sans-serif;
+        padding: 20px 24px;
+        background-color: #fff;
+        border: 1px solid #8E8E8E;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 107.9%;
+        color: #535353;
+        width: 100%;
+        outline: none;
+
+        &::placeholder {
+            font-family: 'Exo', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 107.9%;
+            color: #535353;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 16px 35px;
+        background: #FF1515;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.12);
+        border-radius: 7px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    &__application {
+        max-width: 1300px;
+        padding: 57px 100px;
+
+        &-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 17px;
+            grid-row-gap: 15px;
+            margin: 35px 0;
+
+            select:not(.select select) {
+                font-family: 'Exo', sans-serif;
+                padding: 20px;
+                width: 100%;
+                background-color: #fff;
+                border: 1px solid #8E8E8E;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 107.9%;
+                color: #535353;
+                outline: none;
+                padding-left: 48px;
+                cursor: pointer;
+                appearance: none;
+
+            }
+
+            input {
+                padding: 20px;
+                padding-left: 50px !important;
+                width: 380px;
+            }
+        }
+
+        &-tel {
+            position: relative;
+
+            select {
+                position: absolute;
+            }
+
+            .select {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 28px;
+                    left: 45px;
+                    background-image: url(../images/icons/select-arrow.svg);
+                    width: 11px;
+                    height: 6.84px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            select {
+                cursor: pointer;
+                border: none;
+                background: none;
+                appearance: none;
+                width: 50px;
+                height: 60px;
+                font-family: 'Exo', sans-serif;
+                outline: none;
+                padding-left: 20px;
+            }
+
+            input {
+                padding-left: 60px !important;
+            }
+        }
+
+        &-from {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 28px;
+                left: 15px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-image: url(../images/icons/modal-from.svg);
+                width: 17px;
+                height: 17px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 28px;
+                right: 20px;
+                background-image: url(../images/icons/select-arrow.svg);
+                width: 11px;
+                height: 6.84px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &-view {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 26px;
+                left: 15px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-image: url(../images/icons/modal-view.svg);
+                width: 21px;
+                height: 19px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 25px;
+                right: 20px;
+                background-image: url(../images/icons/select-arrow.svg);
+                width: 11px;
+                height: 6.84px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &-to {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 27px;
+                left: 15px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-image: url(../images/icons/modal-to.svg);
+                width: 17px;
+                height: 17px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 25px;
+                right: 20px;
+                background-image: url(../images/icons/select-arrow.svg);
+                width: 11px;
+                height: 6.84px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        &-comment {
+            grid-column-start: 3;
+            grid-row-start: 3;
+            grid-row-end: 6;
+
+            &::before {
+                background-image: url(../images/icons/modal-comment.svg);
+                top: 30px;
+                width: 21px;
+                height: 21px;
+            }
+
+            textarea {
+                height: 215px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 107.9%;
+                color: #535353;
+                width: 100%;
+                border: 1px solid #8E8E8E;
+                border-radius: 8px;
+                padding: 20px 20px 20px 50px;
+                outline: none;
+                font-family: 'Exo', sans-serif;
+                resize: none;
+
+                &::placeholder {
+                    font-family: 'Exo', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 107.9%;
+                    color: #535353;
+                }
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            input {
+                width: auto;
+            }
+        }
+
+        &-text {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 107.9%;
+            color: #8E8E8E;
+            margin-left: 30px;
+        }
+
+        &-btn {
+            padding: 16px 30px;
+        }
+
+        &-checkbox {
+            position: relative;
+            margin-left: 30px;
+            user-select: none;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 25px;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &.checkbox-phone:before {
+                background-image: url(../images/icons/phone-icon.svg);
+            }
+
+            &.checkbox-email:before {
+                background-image: url(../images/icons/modal-email.svg);
+                width: 17px;
+                height: 12px;
+            }
+
+            &.checkbox-messenger:before {
+                background-image: url(../images/icons/messenger.svg);
+                width: 20px;
+                height: 19px;
+            }
+        }
+
+        &-check {
+            position: absolute;
+            appearance: none;
+        }
+
+        &-check:checked + &-label::after {
+            opacity: 1;
+        }
+
+        &-label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 107.9%;
+            color: #8E8E8E;
+            position: relative;
+            padding-left: 50px;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 18px;
+                border: 1px solid #8E8E8E;
+                border-radius: 3px;
+                background-clip: #fff;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 13px;
+                height: 11px;
+                top: 3px;
+                left: 2px;
+                opacity: 0;
+                background-image: url(../images/icons/check.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: opacity .1s linear;
+            }
+        }
+
+    }
+
+    &__thanks {
+        max-width: 1022px;
+        padding: 76px 87px;
+
+        &-title {
+            font-size: 55px;
+            line-height: 130%;
+            color: #FF1515;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 130%;
+        }
+
+        &-social {
+            margin: 30px 0;
+        }
+
+        &-whatsapp {
+            margin-right: 20px;
+        }
+    }
+
+    &__call {
+        max-width: 775px;
+        padding: 84px 97px;
+
+        &-btn {
+            margin-top: 40px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__message {
+        max-width: 775px;
+        padding: 84px 97px 78px;
+
+        &-btn {
+            margin-top: 40px;
+        }
+
+        input {
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            border: 1px solid #8E8E8E;
+            border-radius: 8px;
+            padding: 32px 24px;
+            outline: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'Exo', sans-serif;
+            color: #535353;
+            height: 160px;
+            overflow-y: auto;
+            resize: none;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                font-family: 'Exo', sans-serif;
+                color: #535353;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lucky Trans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/fovicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!--    <link rel="stylesheet" href="css/fm.selectator.jquery.css">-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="body">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="index.html">
+                        <img class="header__logo-img" src="images/logo.png" alt="">
+                    </a>
+                    <button class="burger">
+                        <span class="burger-line"></span>
+                    </button>
+                    <div class="header__content-box"></div>
+                    <div class="header__content">
+                        <nav class="header__nav">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="index.html">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="company.html">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="services.html">
+                                        Наши услуги
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="clients.html">
+                                        Клиентам
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="contact">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="vacancy.html">
+                                        Вакансии
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__btn page__btn" data-modal="#modal__count">
+                            Запрос на перевозку
+                        </button>
+                        <div class="header__contact">
+                            <p class="header__contact-phone">
+                                <img src="images/icons/phone-icon.svg" alt="">
+                                8 800 808-80-00
+                            </p>
+                            <p class="header__contact-phone">
+                                <img src="images/icons/phone-icon.svg" alt="">
+                                8 800 808-80-00
+                            </p>
+                            <p class="header__contact-email">
+                                <img src="images/icons/sms-icon.svg" alt="">
+                                info@trans.kz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__top">
+                        <a class="breadcrumbs__link" href="">
+                            Главная
+                        </a>
+                        <a class="breadcrumbs__link" href="">
+                            / О компании
+                        </a>
+                    </div>
+                    <h2 class="breadcrumbs__title">
+                        О компании
+                    </h2>
+                </div>
+            </section>
+
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts__content">
+                            <div class="contacts__address">
+                                <h6 class="contacts__content-title">
+                                    Адрес:
+                                </h6>
+                                <p class="contacts__address-text">
+                                    150000, Казахстан, г. Петропавловск, ул. Ы. Алтынсарина 168 Б, каб. 304
+                                </p>
+                            </div>
+                            <div class="contacts__bin">
+                                <h6 class="contacts__content-title">
+                                    бин:
+                                </h6>
+                                <p class="contacts__bin-number">
+                                    140 540 006 718
+                                </p>
+                            </div>
+                            <div class="contacts__email">
+                                <h6 class="contacts__content-title">
+                                    Электронная почта:
+                                </h6>
+                                <p class="contacts__email-text">
+                                    info@luckytrans.kz
+                                </p>
+                                <p class="contacts__email-text">
+                                    luckyinfo@mail.ru
+                                </p>
+                            </div>
+                            <div class="contacts__phone">
+                                <h6 class="contacts__content-title">
+                                    Телефоны:
+                                </h6>
+                                <p class="contacts__phone-number">
+                                    8 702 389 06 93
+                                </p>
+                                <p class="contacts__phone-number">
+                                    8 (7152) 50-21-00
+                                </p>
+                                <p class="contacts__phone-number">
+                                    8 (7152) 50-45-10
+                                </p>
+                            </div>
+                            <button class="contacts__btn page__btn" data-modal="#modal__call">
+                                ЗАКАЗАТЬ ЗВОНОК
+                            </button>
+                        </div>
+                            <div class="contacts__map" style="position:relative;"><a href="https://yandex.kz/maps/10298/petropavlovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Петропавловск</a><a href="https://yandex.kz/maps/10298/petropavlovsk/house/YkAYdwRlSE0HQFtufXR3dnplbA==/inside/?from=mapframe&ll=69.138119%2C54.857166&tab=inside&utm_medium=mapframe&utm_source=maps&z=13" style="color:#eee;font-size:12px;position:absolute;top:14px;">Организации внутри Улица Алтынсарина, 168Б — Яндекс.Карты</a><iframe src="https://yandex.kz/map-widget/v1/-/CCUyEAaYPB" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo" href="#?">
+                        <img class="footer__logo-img" src="images/logo.png" alt="">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="company.html">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="services.html">
+                                    Наши услуги
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="clients.html">
+                                    Клиентам
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a class="header__menu-link" href="vacancy.html">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__social">
+                        <a class="footer__social-whatsapp" href="#?">
+                            <img src="images/icons/whatsapp.png" alt="">
+                        </a>
+                        <a class="footer__social-skype" href="#?">
+                            <img src="images/icons/skype.png" alt="">
+                        </a>
+                    </div>
+                    <div id="contact" class="footer__contact">
+                        <p class="footer__contact-phone">
+                            <img src="images/icons/phone-icon.svg" alt="">
+                            8 800 808-80-00
+                        </p>
+                        <p class="footer__contact-email">
+                            <img src="images/icons/sms-icon.svg" alt="">
+                            info@trans.kz
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <p>
+                        Все права защищены. © 2006-2020
+                    </p>
+                    <p>
+                        Разработано в A-Lux
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- /////////// modals start ///////////  -->
+
+        <div class="modal" id="modal__count">
+
+            <div class="modal__content modal__application">
+                <button class="modal__close" data-close="">
+                    <img src="images/icons/modal-close.svg" alt="">
+                </button>
+                <h3 class="modal__application-title page__title">
+                    ЗАПОЛНИТЕ ФОРМУ ЗАЯВКИ, И МЫ РАССЧИТАЕМ
+                    СТОИМОСТЬ ГРУЗОПЕРЕВОЗКИ
+                </h3>
+                <form class="modal__application-form">
+                    <div class="modal__application-box">
+                        <div class="modal__decor modal__decor-company">
+                            <input class="modal__application-company input-words" type="text" required placeholder="Полное имя компании *">
+                        </div>
+                        <div class="modal__decor modal__decor-name">
+                            <input class="modal__application-name" type="text" name="name" required placeholder="Имя\Фамилия *">
+                        </div>
+                        <!--                        <input type="tel" name="phone" id="phone-country">-->
+                        <div class="modal__application-tel">
+                            <div class="select">
+                                <select id="country">
+                                    <option value="kz" data-thumbnail="images/flags/ks.svg">
+
+                                    </option>
+                                    <option value="ru">
+                                        Ru
+                                    </option>
+                                    <option value="by">
+                                        <p><img src="images/flags/kz.svg" alt=""></p>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="phone-box">
+                                <input id="phone" type="text" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="modal__application-from">
+                            <select required id="select">
+                                <option value="" disabled selected required>Откуда (страна) *</option>
+                                <option value="AF">AFGHANISTAN</option>
+                                <option value="KZ">KAZAKHSTAN</option>
+                                <option value="KW">KUWAIT</option>
+                                <option value="KG">KYRGYZSTAN</option>
+                                <option value="UZ">UZBEKISTAN</option>
+                            </select>
+                        </div>
+
+                        <div class="modal__decor modal__decor-cargo">
+                            <input class="modal__application-cargo" type="text" required placeholder="ГНГ и ЕТСНГ груза *">
+                        </div>
+                        <div class="modal__decor modal__decor-email">
+                            <input class="modal__application-email" type="email" required name="email" placeholder="E-mail *">
+                        </div>
+                        <div class="modal__application-to">
+                            <select required id="select">
+                                <option value="" disabled selected>Куда (страна) *</option>
+                                <option value="AF">AFGHANISTAN</option>
+                                <option value="KZ">KAZAKHSTAN</option>
+                                <option value="KW">KUWAIT</option>
+                                <option value="KG">KYRGYZSTAN</option>
+                                <option value="UZ">UZBEKISTAN</option>
+                            </select>
+                        </div>
+                        <div class="modal__decor modal__decor-weight">
+                            <input class="modal__application-weight" type="text" required placeholder="Вес груза в вагоне *">
+                        </div>
+                        <div class="modal__decor modal__application-comment">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="modal__decor modal__decor-station">
+                            <input class="modal__application-station" type="text" required placeholder="Станция отправления *">
+                        </div>
+                        <div class="modal__application-view">
+                            <select required id="select">
+                                <option value="" disabled selected>Вид подвижного состава *</option>
+                                <option value="1">тяговый</option>
+                                <option value="2">моторвагонный</option>
+                                <option value="3">несамоходный</option>
+                                <option value="4">самоходный </option>
+                            </select>
+                        </div>
+                        <div class="modal__decor modal__decor-station">
+                            <input class="modal__application-station" required type="text" placeholder="Станция назначения *">
+                        </div>
+                        <div class="modal__decor modal__decor-stock">
+                            <input class="modal__application-stock" required type="select" placeholder="Принадлежность подвижного состава *">
+                        </div>
+                    </div>
+                    <div class="modal__application-bottom">
+                        <input class="modal__btn modal__application-btn" type="submit" placeholder="ОТПРАВИТЬ">
+                        <p class="modal__application-text">
+                            Виды связи
+                        </p>
+                        <div class="modal__application-checkbox checkbox-phone">
+                            <input class="modal__application-check" type="checkbox" id="check_1">
+                            <label class="modal__application-label" for="check_1">
+                                Телефон
+                            </label>
+                        </div>
+                        <div class="modal__application-checkbox checkbox-email">
+                            <input class="modal__application-check" type="checkbox" id="check_2">
+                            <label class="modal__application-label" for="check_2">
+                                E-mail
+                            </label>
+                        </div>
+                        <div class="modal__application-checkbox checkbox-messenger">
+                            <input class="modal__application-check" type="checkbox" id="check_3">
+                            <label class="modal__application-label" for="check_3">
+                                Мессенджер
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal" id="modal__call">
+            <div class="modal__content modal__call">
+                <button class="modal__close" data-close="">
+                    <img src="images/icons/modal-close.svg" alt="">
+                </button>
+                <div class="modal__call-title page__title">
+                    Заказать звонок
+                </div>
+                <div class="modal__text">
+                    И мы свяжемся с вами в течении 15 минут
+                </div>
+                <form class="modal__call-form">
+                    <input class="input-words" type="text" name="name" placeholder="Ваше имя">
+                    <input type="number" placeholder="+7 (___) ___-__-__">
+                    <input class="modal__btn modal__call-btn" type="submit" placeholder="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+
+        <div class="modal" id="modal__thanks">
+            <div class="modal__content modal__thanks">
+                <button class="modal__close" data-close="">
+                    <img src="images/icons/modal-close.svg" alt="">
+                </button>
+                <h4 class="modal__thanks-title">
+                    Спасибо
+                </h4>
+                <p class="modal__thanks-text">
+                    Запрос уже улетел для оперативного просчета ставки. Детальная обработка запроса занимает время, поэтому если решение вопроса требовалось *еще вчера* - свяжитесь с экспертами в ближайшем офисе AsstrA. А пока присоединяйтесь к AsstrA в социальных сетях!
+                </p>
+                <div class="modal__thanks-social">
+                    <a class="modal__thanks-whatsapp" href="#?">
+                        <img src="images/icons/whatsapp.png" alt="">
+                    </a>
+                    <a class="modal__thanks-skype" href="#?">
+                        <img src="images/icons/skype.png" alt="">
+                    </a>
+                </div>
+                <p class="modal__thanks-text">Переходите по ссылкам, жмите кнопку «Нравится» и будьте в курсе новостей мира логистики.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal__message">
+            <div class="modal__content modal__message">
+                <button class="modal__close" data-close="">
+                    <img src="images/icons/modal-close.svg" alt="">
+                </button>
+                <div class="modal__message-title page__title">
+                    Написать сообщение
+                </div>
+                <div class="modal__text">
+                    И мы свяжемся с вами в течении 15 минут
+                </div>
+                <form class="modal__message-form">
+                    <input type="text" class="input-words" name="name" placeholder="Ваше имя">
+                    <input type="number" placeholder="+7 (___) ___-__-__">
+                    <input type="email" placeholder="E-mail">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                    <input class="modal__btn modal__message-btn" type="submit" placeholder="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+
+        <!-- /////////// modals end ///////////  -->
+
+        <!--    buttons start    -->
+
+        <div class="page__buttons">
+            <button class="page__buttons-list">
+                <img src="images/icons/page__buttons.png" alt="">
+            </button>
+            <div class="page__buttons-box">
+                <button class="page__buttons-menu">
+                    <img src="images/icons/page-menu_btn.svg" alt="">
+                </button>
+                <div class="page__buttons-inner">
+                    <button class="page__buttons-call" data-modal="#modal__call">
+                        ЗАКАЗАТЬ ЗВОНОК
+                    </button>
+                    <button class="page__buttons-message" data-modal="#modal__message">
+                        Написать сообщение
+                    </button>
+                    <button class="page__buttons-tariff" data-modal="#modal__count">
+                        Рассчитать тариф
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--    buttons end    -->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="js/slick.min.js"></script>
+        <!--        <script src="js/fm.selectator.jquery.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="js/app.js"></script>
+    </div>
+</body>
+
+</html>

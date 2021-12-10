@@ -1,0 +1,72 @@
+.vacancy {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    &-box {
+        background-color: rgba(0, 17, 105, 0.7);
+        padding: 120px 0;
+    }
+
+    &__title {
+        color: #fff;
+    }
+    &__text {
+        max-width: 800px;
+        margin: 40px auto 20px;
+        color: #fff;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 600px;
+
+        &-bottom {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        &-file {
+            opacity: 0;
+            width: 0.1px;
+            height: 0.1px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        &-label {
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        &-btn {
+            width: 200px;
+        }
+
+        &-name,&-phone,    &-email {
+            padding: 20px 15px;
+            margin-top: 20px;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            background-color: transparent;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 107.9%;
+            color: #FFFFFF;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 107.9%;
+                color: #FFFFFF;
+            }
+        }
+
+    }
+}
