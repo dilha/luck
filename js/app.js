@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /* scroll */
     let header = $('.header');
     let scrollOffset = 0;
@@ -21,7 +20,7 @@ $(document).ready(function () {
         $(this).toggleClass('burger--active');
         $('.header__content').toggleClass('active');
         $('.header__content-box').toggleClass('active');
-        $('body').addClass('no-scroll');
+        $('body').toggleClass('no-scroll');
     });
 
     $('.header__content-box').on('click', function () {
@@ -91,15 +90,17 @@ $(document).ready(function () {
         autoplay: true,
     });
 
+//    maskPhone(document.querySelector('.select__current').children[0].id);
 
-    function maskPhone() {
-        var country = $('#country option:selected').val();
+
+    function maskPhone(id) {
+        var country = id;
         switch (country) {
             case "kz":
                 $("#phone").mask("+7(999) 999-99-99");
                 $('#phone')[0].placeholder = '+7 (___) ___-__-__';
                 $('#phone').focus(function () {
-//                    $(this).val('+7');
+                    $(this).val('+7');
                 });
                 break;
             case "ru":
@@ -120,17 +121,14 @@ $(document).ready(function () {
         }
     }
     maskPhone();
-    $('#country').change(function () {
-        maskPhone();
-    });
 
-    $('.header__menu-item').on('click', function() {
-       $(this).addClass('active')
+    $('.header__menu-item').on('click', function () {
+        $(this).addClass('active')
     });
 
 
     /* page btn */
-    $('.page__buttons-menu').on('click', function (event) {
+    $('.page__buttons-btn').on('click', function (event) {
         $(this).toggleClass('active');
         $('.page__buttons-inner').toggleClass('active');
     });
@@ -139,5 +137,38 @@ $(document).ready(function () {
         $(this).next('.wagons__accordion-text').slideToggle();
         $(this).toggleClass('active');
     });
+
+
+    let select = function () {
+        let selectHeader = document.querySelectorAll('.select__header');
+        let selectItem = document.querySelectorAll('.select__item');
+
+        selectHeader.forEach(item => {
+            item.addEventListener('click', selectToggle)
+        });
+
+        selectItem.forEach(item => {
+            item.addEventListener('click', selectChoose)
+        });
+
+        function selectToggle() {
+            this.parentElement.classList.toggle('is-active');
+        }
+
+        function selectChoose() {
+            let text = this.innerText,
+                select = this.closest('.select'),
+                currentText = select.querySelector('.select__current');
+            maskPhone(this.children[0].id);
+            $('.select__current')[0].children[0].src = this.children[0].src;
+            select.classList.remove('is-active');
+        }
+
+    };
+
+
+    select();
+
+
 
 });

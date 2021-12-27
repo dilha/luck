@@ -4,7 +4,6 @@
 
 @media(max-width: 1385px) {
 
-
     .header__menu-link {
         font-size: 14px;
     }
@@ -43,6 +42,9 @@
 }
 
 @media(max-width: 1280px) {
+    .modal__application-tel .select.is-active .select__body {
+        top: 57px;
+    }
 
     .modal__application {
         max-width: 1200px;
@@ -208,6 +210,28 @@
 }
 
 @media(max-width: 1150px) {
+
+    .contacts {
+        padding: 60px 0 100px;
+    }
+
+    .contacts__content p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .contacts__content {
+        div +div {
+            margin-top: 20px;
+        }
+    }
+
+    .contacts__content-title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
     .modal__application {
         max-width: 950px;
         padding: 50px 25px;
@@ -246,6 +270,34 @@
 
 
 @media(max-width: 970px) {
+
+    .breadcrumbs {
+        padding: 40px 0;
+    }
+
+    .contacts {
+        padding: 50px 0 60px;
+    }
+
+    .contacts__inner {
+        flex-direction: column;
+    }
+
+    .contacts__map {
+        height: 500px;
+        width: 100%;
+
+        iframe {
+            left: -10px;
+            top: -10px;
+        }
+    }
+
+    .contacts__content {
+        margin-top: 50px;
+        order: 1;
+        padding-left: 30px;
+    }
 
     .modal__application {
         padding: 30px 20px;
@@ -489,15 +541,15 @@
     }
 
     .page__buttons {
-        bottom: 30%;
-        right: 20px;
+        bottom: 40%;
+        right: 35px;
     }
 
     .page__buttons-inner {
         flex-direction: column-reverse;
         align-items: flex-end;
-        top: 80px;
-        right: -25px;
+        top: 50px;
+        right: -20px;
     }
 
     .page__buttons-message {
@@ -620,7 +672,9 @@
         top: 22px;
     }
 
-
+    .modal__application-tel .select.is-active .select__body {
+        top: 51px;
+    }
 }
 
 @media(max-width: 570px) {
@@ -726,6 +780,18 @@
 
 @media(max-width: 490px) {
 
+    .contacts {
+        padding: 40px 0 50px;
+    }
+
+    .contacts__map {
+        height: 300px;
+    }
+
+    .contacts__content {
+        padding-left: 15px;
+    }
+
     .modal__application-checkbox {
         margin-left: 15px;
     }
@@ -801,6 +867,31 @@
         &::placeholder {
             font-size: 12px;
         }
+    }
+
+    .modal__application-tel .select.is-active .select__body {
+        top: 42px;
+    }
+
+    .modal__application-tel .select__item {
+        padding: 6px;
+    }
+
+    .modal__application-tel .select__current {
+        padding: 16px 15px 16px 10px;
+    }
+
+    .modal__application-tel .select::before {
+        left: 35px;
+        top: 20px;
+    }
+
+    .modal__application-tel input {
+        padding-left: 50px !important;
+    }
+
+    .modal__application-tel .select__body {
+        width: 45px;
     }
 
     .page__title {

@@ -90,59 +90,110 @@ input[type="number"]::-webkit-inner-spin-button {
         flex-direction: column;
         align-items: center;
 
+        &-box {
+            position: relative;
+        }
+
+        &-btn {
+            position: relative;
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+
+            &.active {
+                .page__buttons-list {
+                    opacity: 0;
+                }
+
+                .page__buttons-cross {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
         &-list {
+            position: absolute;
+            top: -10px;
+            right: -10px;
             background-color: #FF1515;
             padding: 11px 10px 9px 13px;
             border-radius: 50%;
             border: none;
-            animation: ripple 2s linear infinite;
+            animation: ripple 2.5s linear infinite;
+            transition: opacity .3s linear;
+            z-index: 10;
+            opacity: 1;
+        }
+
+        &-cross {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transform: rotate(45deg);
+            z-index: 9;
+            opacity: 0;
+            transition: all .3s linear;
+        }
+
+        /*
+        &-list {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #FF1515;
+            padding: 11px 10px 9px 13px;
+            border-radius: 50%;
+            border: none;
+            animation: ripple 1.5s linear infinite;
             cursor: pointer;
             outline: none;
+            transition: opacity .2s linear;
+            opacity: 1;
+            z-index: 6;
         }
+
+
+        &-menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: all .2s linear;
+            opacity: 0;
+            z-index: 5;
+        }
+*/
+
+
 
         @keyframes ripple {
             0% {
-                box-shadow: 0 0 0 7px rgba(255, 21, 21, 0.7),
-                    0 0 0 14px rgba(255, 21, 21, 0.2);
+                box-shadow: 0 0 0 2px rgba(255, 21, 21, 0.7),
+                    0 0 0 5px rgba(255, 21, 21, 0.2);
 
             }
 
             50% {
                 box-shadow: 0 0 0 10px rgba(255, 21, 21, 0.7),
-                    0 0 0 22px rgba(255, 21, 21, 0.7);
+                    0 0 0 20px rgba(255, 21, 21, 0.7);
 
             }
 
             100% {
-                box-shadow: 0 0 0 7px rgba(255, 21, 21, 0.7),
-                    0 0 0 14px rgba(255, 21, 21, 0.2);
+                box-shadow: 0 0 0 2px rgba(255, 21, 21, 0.7),
+                    0 0 0 5px rgba(255, 21, 21, 0.2);
             }
-        }
-
-        &-menu {
-            padding: 0;
-            border: none;
-            background: none;
-            margin-top: 40px;
-            transform: rotate(45deg);
-            cursor: pointer;
-            transition: all .2s linear;
-
-            &.active {
-                transform: rotate(0deg);
-                cursor: pointer;
-
-            }
-        }
-
-        &-box {
-            position: relative;
         }
 
         &-inner {
             position: absolute;
             display: flex;
-            top: 35px;
+            top: 10px;
             right: 40px;
             pointer-events: none;
             cursor: default;
@@ -277,5 +328,3 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 @import 'media.scss';
-
-

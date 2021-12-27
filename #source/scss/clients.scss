@@ -1,5 +1,17 @@
 .clients {
-    padding: 50px;
+    padding: 50px 0;
+}
+
+.invoice__title,
+.wagons__title,
+.railways__title {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 32px;
+    color: #1F4287;
+    opacity: 0.9;
+    text-transform: uppercase;
 }
 
 .invoice {
@@ -8,15 +20,13 @@
     flex-direction: column;
     align-items: center;
 
-    &__title {}
-
     &__text {
         margin: 20px 0;
         font-size: 18px;
     }
 
     &__img {
-        width: 1000px;
+        width: 100%;
         height: auto;
     }
 
@@ -27,6 +37,10 @@
 
 .wagons {
     margin-top: 50px;
+
+    &__title {
+        margin-bottom: 10px;
+    }
 
     &__accordion {
         color: #000000;
@@ -47,7 +61,7 @@
 
             img {
                 position: absolute;
-                top: 30px;
+                top: 20px;
                 right: 30px;
                 width: 20px;
                 height: 20px;
@@ -63,7 +77,7 @@
             p {
                 font-weight: bold;
                 font-size: 20px;
-                line-height: 40px;
+                line-height: 25px;
             }
         }
 
@@ -86,11 +100,14 @@
 
 .railways {
     margin-top: 80px;
+
     &__text {
         font-size: 20px;
         line-height: 24px;
         margin: 20px 0;
     }
+
+    &__title {}
 
     &__list {
         padding-left: 20px;
@@ -119,26 +136,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
