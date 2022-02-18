@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="images/fovicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&family=Exo:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -84,6 +81,7 @@
             </div>
         </header>
 
+
         <main class="main">
 
             <section class="breadcrumbs">
@@ -104,15 +102,42 @@
 
             <section class="clients">
                 <div class="container">
-                    <div class="invoice">
-                        <h5 class="invoice__title page__title">
-                            Накладная
-                        </h5>
-                        <p class="invoice__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, fugit.
-                        </p>
-                        <img class="invoice__img" src="images/invoice.png" alt="">
-                        <a class="invoice__download page__btn" href="images/map.svg" download="" title="скачать накладную">Скачать накладную</a>
+                    <h5 class="invoice__title page__title">
+                        Накладная
+                    </h5>
+                    <div class="invoice__inner">
+                        <div class="invoice__image">
+                            <img class="invoice__img" src="images/invoice.svg" alt="">
+                            <a class="invoice__download page__btn" href="images/map.svg" download="" title="скачать накладную">Скачать накладную</a>
+                        </div>
+                        <div class="invoice__content">
+                            <div class="invoice__text">
+                                <p>
+                                    СМГС - Соглашение о международном железнодорожном грузовом сообщении. Соглашение СМГС является одним из основных международных документов, заключенных с целью организации международной перевозки груза. Девствует с 1 ноября 1951 года, постоянно изменяется и дополняется. Странами участниками соглашения СМГС являются: Азербайджан, Албания, Беларусь, Болгария, Венгрия, Вьетнам, Грузия, Иран, Казахстан, Китай, КНДР, Кыргызстан, Латвия, Литва, Молдова, Монголия, Польша, Россия, Таджикистан, Туркменистан, Узбекистан, Украина, Эстония.
+                                </p>
+                                <p>
+                                    Накладная СМГС – это накладная международного образца, используемая в международных грузовых перевозках, по сети железных дорог стран участниц «Соглашения о международном железнодорожном грузовом сообщении.
+                                </p>
+                                <p>
+                                    Несет в себе функции:
+                                </p>
+                                <ul>
+                                    <li>
+                                        - основного перевозочного документа,
+                                    </li>
+                                    <li>
+                                        - документа подтверждающего заключения договора перевозки между грузоотправителем и администрацией железной дороги.
+                                    </li>
+                                    <li>
+                                        - расписки, которая подтверждает принятие железной дорогой груза к перевозке.
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                читать далее
+                            </button>
+                        </div>
+
                     </div>
                     <div class="wagons">
                         <h5 class="wagons__title">
@@ -121,13 +146,25 @@
                         <div class="wagons__accordion">
                             <div class="wagons__accordion-item">
                                 <div class="wagons__accordion-title">
-                                    <p>Крутые вагоны</p>
+                                    <p>Крытые вагоны</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-1.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Крытый вагон</span> - это тип грузового вагона, закрытый со всех сторон. Конструкция крытого вагона защищает перевозимый груз от атмосферных осадков, а также обеспечивает его защиту от кражи и механических повреждений.
+                                                Кузов этих вагонов имеет раму, боковые и торцевые стены, крышу, настенное внутренние несъемное оборудование и люков с вентиляционными решетками на боковых стенах. Для загрузки и выгрузки грузов, вагон имеет люки в крыше и боковые двери с задвижными створками с запорами с возможностью пломбировки и закрывания на замок или ЗПУ. На одном из торцов вагона возможно наличие площадки с ограждением для безопасного перехода между вагонами.
+                                            </p>
+                                            <p>
+                                                По назначению (по перевозимым грузам) крытые вагоны разделяются на два типа: универсальные и специализированные. Универсальные крытые вагоны предназначены для перевозки штучных, сыпучих и тарно-упакованных грузов.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="wagons__accordion-item">
@@ -135,10 +172,24 @@
                                     <p>Полувагоны</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-2.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Полувагон</span> представляет собой железнодорожный грузовой вагон без крыши с высокими бортами. Полувагоны предназначены для перевозки навалочных грузов: руда, уголь, лесоматериалы и т.п., а также контейнеров и других грузов, не требующих защиты от атмосферных осадков.
+                                            </p>
+                                            <p>
+                                                Кузов полувагона не имеет крыши или в небольшом количестве моделей крыша является съемной. Это обеспечивает удобство, а главное быстроту погрузки грузов. Кузов полувагона может быть глухим или иметь раскрывающиеся торцевые стенки и люки в полу. В левом заднем и правом переднем углу имеется скобтрап.
+                                            </p>
+                                            <p>
+                                                Разгрузка полувагонов производится двумя способами: выгрузка навалочных грузов самотеком через люки (через борта при использовании вагоноопрокидывателя) или путем вычерпывания груза без открывания люков.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="wagons__accordion-item">
@@ -146,10 +197,22 @@
                                     <p>Платформы</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-1.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Крытый вагон</span> - это тип грузового вагона, закрытый со всех сторон. Конструкция крытого вагона защищает перевозимый груз от атмосферных осадков, а также обеспечивает его защиту от кражи и механических повреждений.
+                                                Кузов этих вагонов имеет раму, боковые и торцевые стены, крышу, настенное внутренние несъемное оборудование и люков с вентиляционными решетками на боковых стенах. Для загрузки и выгрузки грузов, вагон имеет люки в крыше и боковые двери с задвижными створками с запорами с возможностью пломбировки и закрывания на замок или ЗПУ. На одном из торцов вагона возможно наличие площадки с ограждением для безопасного перехода между вагонами.
+                                            </p>
+                                            <p>
+                                                По назначению (по перевозимым грузам) крытые вагоны разделяются на два типа: универсальные и специализированные. Универсальные крытые вагоны предназначены для перевозки штучных, сыпучих и тарно-упакованных грузов.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="wagons__accordion-item">
@@ -157,10 +220,22 @@
                                     <p>Цистерны</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-1.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Крытый вагон</span> - это тип грузового вагона, закрытый со всех сторон. Конструкция крытого вагона защищает перевозимый груз от атмосферных осадков, а также обеспечивает его защиту от кражи и механических повреждений.
+                                                Кузов этих вагонов имеет раму, боковые и торцевые стены, крышу, настенное внутренние несъемное оборудование и люков с вентиляционными решетками на боковых стенах. Для загрузки и выгрузки грузов, вагон имеет люки в крыше и боковые двери с задвижными створками с запорами с возможностью пломбировки и закрывания на замок или ЗПУ. На одном из торцов вагона возможно наличие площадки с ограждением для безопасного перехода между вагонами.
+                                            </p>
+                                            <p>
+                                                По назначению (по перевозимым грузам) крытые вагоны разделяются на два типа: универсальные и специализированные. Универсальные крытые вагоны предназначены для перевозки штучных, сыпучих и тарно-упакованных грузов.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="wagons__accordion-item">
@@ -168,10 +243,22 @@
                                     <p>Вагоны для нефтебитума и думпкары</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-1.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Крытый вагон</span> - это тип грузового вагона, закрытый со всех сторон. Конструкция крытого вагона защищает перевозимый груз от атмосферных осадков, а также обеспечивает его защиту от кражи и механических повреждений.
+                                                Кузов этих вагонов имеет раму, боковые и торцевые стены, крышу, настенное внутренние несъемное оборудование и люков с вентиляционными решетками на боковых стенах. Для загрузки и выгрузки грузов, вагон имеет люки в крыше и боковые двери с задвижными створками с запорами с возможностью пломбировки и закрывания на замок или ЗПУ. На одном из торцов вагона возможно наличие площадки с ограждением для безопасного перехода между вагонами.
+                                            </p>
+                                            <p>
+                                                По назначению (по перевозимым грузам) крытые вагоны разделяются на два типа: универсальные и специализированные. Универсальные крытые вагоны предназначены для перевозки штучных, сыпучих и тарно-упакованных грузов.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="wagons__accordion-item">
@@ -179,10 +266,22 @@
                                     <p>Вагоны повышенной вместимости (узкая колея)</p>
                                     <img src="images/icons/select-arrow.svg" alt="">
                                 </div>
-                                <div class="wagons__accordion-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum consequuntur sunt inventore impedit, nam, perferendis veritatis reiciendis? Repellendus aliquam, quaerat delectus. Impedit nulla ullam delectus corporis alias in eveniet, debitis.
-                                    </p>
+                                <div class="wagons__accordion-content">
+                                    <div class="wagons__accordion-box">
+                                        <img class="wagons__accordion-img" src="images/wagons/wagons-1.png" alt="">
+                                        <div class="wagons__accordion-text">
+                                            <p>
+                                                <span>Крытый вагон</span> - это тип грузового вагона, закрытый со всех сторон. Конструкция крытого вагона защищает перевозимый груз от атмосферных осадков, а также обеспечивает его защиту от кражи и механических повреждений.
+                                                Кузов этих вагонов имеет раму, боковые и торцевые стены, крышу, настенное внутренние несъемное оборудование и люков с вентиляционными решетками на боковых стенах. Для загрузки и выгрузки грузов, вагон имеет люки в крыше и боковые двери с задвижными створками с запорами с возможностью пломбировки и закрывания на замок или ЗПУ. На одном из торцов вагона возможно наличие площадки с ограждением для безопасного перехода между вагонами.
+                                            </p>
+                                            <p>
+                                                По назначению (по перевозимым грузам) крытые вагоны разделяются на два типа: универсальные и специализированные. Универсальные крытые вагоны предназначены для перевозки штучных, сыпучих и тарно-упакованных грузов.
+                                            </p>
+                                            <button class="invoice__btn" href="#?" data-modal="#invoice__read">
+                                                читать далее
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -300,7 +399,61 @@
                 </div>
             </section>
 
-
+            <div class="modal" id="invoice__read">
+                <div class="modal__content invoice__read">
+                    <button class="modal__close" data-close="">
+                        <img src="images/icons/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal__text invoice__read-text">
+                        <p>
+                            СМГС - Соглашение о международном железнодорожном грузовом сообщении. Соглашение СМГС является одним из основных международных документов, заключенных с целью организации международной перевозки груза. Девствует с 1 ноября 1951 года, постоянно изменяется и дополняется. Странами участниками соглашения СМГС являются: Азербайджан, Албания, Беларусь, Болгария, Венгрия, Вьетнам, Грузия, Иран, Казахстан, Китай, КНДР, Кыргызстан, Латвия, Литва, Молдова, Монголия, Польша, Россия, Таджикистан, Туркменистан, Узбекистан, Украина, Эстония.
+                        </p>
+                        <p>
+                            Накладная СМГС – это накладная международного образца, используемая в международных грузовых перевозках, по сети железных дорог стран участниц «Соглашения о международном железнодорожном грузовом сообщении.
+                        </p>
+                        <p>
+                            Несет в себе функции:
+                        </p>
+                        <ul>
+                            <li>
+                                - основного перевозочного документа,
+                            </li>
+                            <li>
+                                - документа подтверждающего заключения договора перевозки между грузоотправителем и администрацией железной дороги.
+                            </li>
+                            <li>
+                                - расписки, которая подтверждает принятие железной дорогой груза к перевозке.
+                            </li>
+                        </ul>
+                        <p>
+                            Печатается на стандартных бланках. Оформляется на имя грузополучателя. Заполнением накладной СМГС занимается обычно грузоотправитель, или экспедитор на основе инструкции, предоставленной транспортно – экспедиционной компанией, ведущей перевозку. Заверяется перевозчиком, с простановкой штемпеля станции отправления. Следует с грузом, до станции назначения.
+                        </p>
+                        <p>
+                            В комплекте с накладной СМГС, должны следовать все сопровождающие груз документы: сертификаты, спецификации, упаковочные листы и т.д.
+                        </p>
+                        <p>
+                            СМГС накладная состоит из пяти листов:
+                        </p>
+                        <ul>
+                            <li>
+                                Лист №1 – «Оригинал накладной». Выдается получателю на станции назначения вместе с грузом.
+                            </li>
+                            <li>
+                                Лист №2 – «Дорожная ведомость». Сопровождает груз до конечной станции. Количество дорожных ведомостей, равняется количеству дорог участвующих в перевозке. Остается на дороге назначения.
+                            </li>
+                            <li>
+                                Лист №3 – «Дубликат накладной». Остается у отправителя.
+                            </li>
+                            <li>
+                                Лист №4 – «Лист передачи груза». Как и «дорожная ведомость» - сопровождает груз до конечной станции, и остается на дороге назначения.
+                            </li>
+                            <li>
+                                Лист №5 – «Уведомление о прибытии груза». Выдается грузополучателю, вместе с листом №5 - оригиналом накладной, и грузом.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </main>
 
@@ -312,33 +465,33 @@
                     </a>
                     <nav class="footer__nav">
                         <ul class="footer__menu">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="index.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="index.html">
                                     Главная
                                 </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="company.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="company.html">
                                     О компании
                                 </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="services.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="services.html">
                                     Наши услуги
                                 </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="clients.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="clients.html">
                                     Клиентам
                                 </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="contacts.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="contacts.html">
                                     Контакты
                                 </a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="vacancy.html">
+                            <li class="footer__menu-item">
+                                <a class="footer__menu-link" href="vacancy.html">
                                     Вакансии
                                 </a>
                             </li>
@@ -394,23 +547,44 @@
                         <div class="modal__decor modal__decor-name">
                             <input class="modal__application-name" type="text" name="name" required placeholder="Имя\Фамилия *">
                         </div>
-                        <!--                        <input type="tel" name="phone" id="phone-country">-->
                         <div class="modal__application-tel">
                             <div class="select">
-                                <select id="country">
-                                    <option value="kz" data-thumbnail="images/flags/ks.svg">
+                                <div class="select__header">
+                                    <span class="select__current">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </span>
+                                </div>
 
-                                    </option>
-                                    <option value="ru">
-                                        Ru
-                                    </option>
-                                    <option value="by">
-                                        <p><img src="images/flags/kz.svg" alt=""></p>
-                                    </option>
-                                </select>
+                                <div class="select__body">
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/flag-1.png" id="by" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/flag-1.png" id="by" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                    <div class="select__item">
+                                        <img src="images/flags/kz.svg" id="kz" alt="">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="phone-box">
-                                <input id="phone" type="text" class="form-control" placeholder="">
+                                <input id="phone" type="text" class="form-control" placeholder="+7 (___) ___-__-__">
                             </div>
                         </div>
                         <div class="modal__application-from">
@@ -560,12 +734,12 @@
         <!--    buttons start    -->
 
         <div class="page__buttons">
-            <button class="page__buttons-list">
-                <img src="images/icons/page__buttons.png" alt="">
-            </button>
             <div class="page__buttons-box">
-                <button class="page__buttons-menu">
-                    <img src="images/icons/page-menu_btn.svg" alt="">
+                <button class="page__buttons-btn">
+                    <div class="page__buttons-list">
+                        <img src="images/icons/page__buttons.png" alt="">
+                    </div>
+                    <img class="page__buttons-cross" src="images/icons/page-menu_btn.svg" alt="">
                 </button>
                 <div class="page__buttons-inner">
                     <button class="page__buttons-call" data-modal="#modal__call">

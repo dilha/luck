@@ -57,6 +57,11 @@ $(document).ready(function () {
 
         $(modalId).addClass('show');
         $('body').addClass('no-scroll');
+        if (document.querySelector('.invoice__read').scrollHeight >= window.innerHeight) {
+            $('.modal').addClass('flex-start');
+        } else {
+            $('.modal').removeClass('flex-start');
+        }
     });
 
     modalClose.on('click', function (event) {
@@ -67,11 +72,13 @@ $(document).ready(function () {
 
         modalParent.removeClass('show');
         $('body').removeClass('no-scroll');
+        $('.modal').removeClass('flex-start');
     });
 
     $('.modal').on('click', function (event) {
         $(this).removeClass('show');
         $('body').removeClass('no-scroll');
+        $('.modal').removeClass('flex-start');
     });
 
     $('.modal__content').on('click', function (event) {
@@ -90,7 +97,7 @@ $(document).ready(function () {
         autoplay: true,
     });
 
-//    maskPhone(document.querySelector('.select__current').children[0].id);
+    //    maskPhone(document.querySelector('.select__current').children[0].id);
 
 
     function maskPhone(id) {
@@ -134,9 +141,11 @@ $(document).ready(function () {
     });
 
     $('.wagons__accordion-title').on('click', function () {
-        $(this).next('.wagons__accordion-text').slideToggle();
+        $(this).next('.wagons__accordion-content').slideToggle();
         $(this).toggleClass('active');
     });
+
+
 
 
     let select = function () {
@@ -168,6 +177,12 @@ $(document).ready(function () {
 
 
     select();
+
+    $('.vacancy__form-file').change(function () {
+        if (this.files[0])
+            $('.vacancy__form-label').text(this.files[0].name);
+    });
+
 
 
 

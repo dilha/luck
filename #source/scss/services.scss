@@ -144,4 +144,14 @@
         }
     }
 
+    &__text {
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 20px;
+        padding-left: 20px;
+        &::before {
+            content: '-';
+        }
+    }
+
 }
