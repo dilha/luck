@@ -62,6 +62,11 @@ $(document).ready(function () {
         } else {
             $('.modal').removeClass('flex-start');
         }
+        if (document.querySelector('.wagons__read').scrollHeight >= window.innerHeight) {
+            $('.modal').addClass('flex-start');
+        } else {
+            $('.modal').removeClass('flex-start');
+        }
     });
 
     modalClose.on('click', function (event) {

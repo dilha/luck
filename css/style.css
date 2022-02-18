@@ -153,8 +153,8 @@ input[type=number]::-webkit-inner-spin-button {
   border: none;
   -webkit-animation: ripple 2.5s linear infinite;
           animation: ripple 2.5s linear infinite;
-  -webkit-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
   z-index: 10;
   opacity: 1;
 }
@@ -1714,7 +1714,8 @@ input[type=number]::-webkit-inner-spin-button {
   right: 10px;
 }
 
-#invoice__read {
+#invoice__read,
+.wagons__modal {
   overflow-x: auto;
   padding: 20px;
 }
@@ -1809,6 +1810,41 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 600;
 }
 .wagons__accordion-text p + p {
+  margin-top: 20px;
+}
+.wagons__read {
+  max-width: 700px;
+  padding: 0 20px 20px;
+}
+.wagons__read .modal__close {
+  top: 10px;
+  right: 10px;
+}
+.wagons__read-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 20px 30px 0;
+}
+.wagons__read-title {
+  font-size: 30px;
+  line-height: 33px;
+}
+.wagons__read-img {
+  max-width: 250px;
+}
+.wagons__read-text {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+}
+.wagons__read-text p + p {
   margin-top: 20px;
 }
 
@@ -2771,7 +2807,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 
   .page__buttons {
-    bottom: 40%;
+    bottom: 10%;
     right: 35px;
   }
 
@@ -2783,7 +2819,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    top: 50px;
+    top: -125px;
     right: -20px;
   }
 
@@ -2901,6 +2937,15 @@ input[type=number]::-webkit-inner-spin-button {
   .invoice__read-text {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .wagons__read-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .wagons__read-img {
+    max-width: 200px;
   }
 }
 @media (max-width: 620px) {
@@ -3124,6 +3169,24 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 12px;
     line-height: 15px;
   }
+
+  .wagons__read-title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .wagons__read-img {
+    max-width: 150px;
+  }
+
+  .wagons__read-text {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .wagons__read-text p + p {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 430px) {
   .modal__application-title {
@@ -3238,6 +3301,16 @@ input[type=number]::-webkit-inner-spin-button {
   .invoice__text {
     font-size: 13px;
     line-height: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .wagons__read-title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .wagons__read-img {
+    max-width: 120px;
   }
 }
 @media (max-width: 385px) {

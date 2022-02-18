@@ -91,7 +91,8 @@
     }
 }
 
-#invoice__read {
+#invoice__read,
+.wagons__modal {
     overflow-x: auto;
     padding: 20px;
 }
@@ -184,6 +185,42 @@
         }
 
 
+    }
+
+    &__read {
+
+        max-width: 700px;
+        padding:  0 20px 20px;
+
+        .modal__close {
+            top: 10px;
+            right: 10px;
+        }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px 30px 0;
+        }
+
+        &-title {
+            font-size: 30px;
+            line-height: 33px;
+        }
+
+        &-img {
+            max-width: 250px;
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+            p + p {
+                margin-top: 20px;
+            }
+        }
     }
 }
 

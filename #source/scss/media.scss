@@ -579,14 +579,14 @@
     }
 
     .page__buttons {
-        bottom: 40%;
+        bottom: 10%;
         right: 35px;
     }
 
     .page__buttons-inner {
         flex-direction: column-reverse;
         align-items: flex-end;
-        top: 50px;
+        top: -125px;
         right: -20px;
     }
 
@@ -700,6 +700,15 @@
     .invoice__read-text {
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .wagons__read-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .wagons__read-img {
+        max-width: 200px;
     }
 }
 
@@ -919,6 +928,24 @@
         font-size: 12px;
         line-height: 15px;
     }
+
+    .wagons__read-title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .wagons__read-img {
+        max-width: 150px;
+    }
+
+    .wagons__read-text {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .wagons__read-text p + p {
+        margin-top: 10px;
+    }
 }
 
 
@@ -1022,6 +1049,17 @@
         line-height: 16px;
     }
 
+}
+
+@media(max-width: 400px) {
+    .wagons__read-title {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .wagons__read-img {
+        max-width: 120px;
+    }
 }
 
 @media(max-width: 385px) {
