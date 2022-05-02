@@ -102,8 +102,7 @@ $(document).ready(function () {
 //        autoplay: true,
 //    });
 
-    //    maskPhone(document.querySelector('.select__current').children[0].id);
-
+    maskPhone(document.querySelector('.select__current').children[0].id);
 
     function maskPhone(id) {
         var country = id;
@@ -133,7 +132,7 @@ $(document).ready(function () {
         }
     }
     maskPhone();
-
+    $("#phone").mask("+7(999) 999-99-99");
     $('.header__menu-item').on('click', function () {
         $(this).addClass('active')
     });
